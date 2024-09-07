@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <b><h1>IMAGE GALLERY</h1></b> 
+    <div class="row">
+        <div class="column">
+          <img src="image1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="image2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="image3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="image4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="image5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="image6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="image7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="image8.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="image1.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="image2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="image3.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="image4.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5/ 8</div>
+            <img src="image5.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="image6.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="image7.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="image8.jpeg" style="width:100%">
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <script src="task1.js"></script>
+</body>
+</html>
